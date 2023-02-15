@@ -1,19 +1,16 @@
-import { useState } from 'react'
-
-import reactLogo from './assets/react.svg'
-import {Form} from '../src/components/index'
-import { Box, Card } from '@chakra-ui/react'
-
-
+import { Box } from '@chakra-ui/react';
+import {Form, Palindrome} from '../src/components/index';
 
 function App() {
 
   return (
     <>
-
-      <Form />
-
-
+      <Box>
+        <Form />
+      </Box>
+      <Box>
+        <Palindrome />
+      </Box>
     </>
   )
 }

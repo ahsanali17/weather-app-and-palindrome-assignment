@@ -1,11 +1,22 @@
-import React from 'react'
-import { Switch } from '@chakra-ui/react'
+import React from 'react';
+import { Switch,  } from '@chakra-ui/react'
 
-const TemperatureToggler = ()  => {
+type propTypes = {
+  switchRef: React.RefObject<HTMLInputElement>,
+  setIsChecked: React.Dispatch<React.SetStateAction<boolean>>,
+}
+
+const TemperatureToggler = ({switchRef, setIsChecked}: propTypes)  => {
+
+  const handleToggle = () => {
+    if (switchRef.current) {
+      setIsChecked(switchRef.current.checked);
+    }
+  }
+
   return (
     <>
-     <Switch />
-
+     <Switch onChange={handleToggle} ref={switchRef} />
     </>
   )
 }
