@@ -1,6 +1,6 @@
 # weather-app-and-palindrome-assignment
 Comprised of 2 parts:
-1. This application get the current weather of city and user can save that cities name and weather data to localStorage. 
+1. This application gets the current weather of a city and user can save that city name and weather data to localStorage. 
 2. There is also a palindrome form checker.
 
 ## The API can be found [here](https://openweathermap.org)
